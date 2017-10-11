@@ -1,7 +1,34 @@
-# CarND-Controls-PID
+# CarND-Controls-PID - Jose C. Marti
 Self-Driving Car Engineer Nanodegree Program
 
----
+This is the 4th project of the Term 2. In this project I have implemented a PID controller in C++. The goal is to control the steering of the vehicle in the simulator and successfully drive at least a lap around the track.
+
+
+## Describe the effect each of the P, I, D components had in your implementation. 
+
+P - The proportional coefficient forces the car to steer proportionally to the center of the track. This parameter provides the most significative effect in the vehicle. The system ends up overshooting and oscillating. 
+
+I - The Integral coefficient compensates any possible the bias in the error. I do not believe that there is any error in the steering in the simulator.
+
+D - The differential coefficient smoothens the movement of the vehicle when approaches to the center of the track. It reduces the overshooting caused by the proportional coefficient.
+
+![pic](snap.png)
+
+## Describe how the final hyperparameters were chosen.	
+
+Parameters were chosen manually by trial and error. Following the walkthrough video from Udacity using the suggested parameters as starting point and progressively increasing D and decreasing P.
+
+
+## Conclusion
+
+This project has been a good refreshment from engineering school where I studied this and other controllers. I had lost the meaning of the “I” and “D” part of the controller and I really enjoyed the revival of this knowledge. 
+
+
+
+J. C. Marti
+
+
+-----------------------
 
 ## Dependencies
 
